@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id='layout'></h1>
+        <h1 id='view'></h1>
+    </div>
+    <script>
+        var layout = document.documentElement.clientWidth;
+        var view = window.innerWidth;
+
+        var oLayout = document.getElementById('layout');
+        var oView = document.getElementById('view');
+
+        oLayout.innerHTML = `布局视口：${layout}`;
+        oView.innerHTML = `视觉视口：${view}`;
+    </script>
+</body>
+</html>
